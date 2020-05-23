@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import HoverEffect1 from "./HoverEffect1/HoverEffect1";
+import HoverEffect2 from "./HoverEffect2/HoverEffect2";
+import HoverEffect3 from "./HoverEffect3/HoverEffect3";
+import "./App.scss";
+import "./reset.scss";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <HoverEffect1 />
+        <HoverEffect2 />
+        <HoverEffect3 />
+      </div>
+    );
+  }
 }
 
 export default App;

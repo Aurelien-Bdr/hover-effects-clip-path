@@ -1,0 +1,15 @@
+@mixin titleStyle {
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+@mixin sectionDisplay {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}

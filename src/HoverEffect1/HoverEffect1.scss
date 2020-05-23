@@ -1,0 +1,46 @@
+@import "../Mixins.scss";
+
+.sectionContainer1 {
+  background: #dcf5ff;
+  @include sectionDisplay;
+
+  .container1 {
+    width: 400px;
+    color: #ffffff;
+
+    h2 {
+      color: #0176a5;
+      @include titleStyle;
+    }
+
+    .inner1 {
+      background: #31fcd0;
+      padding: 2em;
+      border-radius: 10px;
+      clip-path: circle(7% at 90% 27%);
+      transition: all 0.7s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        clip-path: circle(75%);
+        background: #00b6ff;
+      }
+
+      span {
+        float: right;
+        font-weight: bold;
+        transition: color 0.5s;
+        position: relative;
+        margin-right: 1.6%;
+      }
+
+      &:hover span {
+        color: rgba(255, 255, 255, 0);
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

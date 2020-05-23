@@ -1,0 +1,36 @@
+@import "../Mixins.scss";
+
+.sectionContainer3 {
+  background: #4b89ac;
+  @include sectionDisplay;
+
+  h2 {
+    color: #faee5a;
+    @include titleStyle;
+  }
+
+  .container3 {
+    width: 400px;
+    border-radius: 10px;
+    background: #ace6f6;
+    color: #4b89ac;
+    cursor: pointer;
+
+    .inner3 {
+      background: #faee5a;
+      padding: 2em;
+      border-radius: 10px;
+      width: calc(100% -2em);
+      clip-path: inset(0% 0% 0% 100%);
+      transition: all 0.5s ease-in-out;
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+
+    &:hover .inner3 {
+      clip-path: inset(0% 0% 0% 0%);
+    }
+  }
+}
